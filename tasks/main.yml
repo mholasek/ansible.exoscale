@@ -17,3 +17,7 @@
 - name: main | start nodes
   include_tasks: 6_node_start.yml
   when: exoscale_instance
+
+- name: main | set tags
+  include_tasks: 7_node_tags.yml
+  when: exoscale_tags is defined

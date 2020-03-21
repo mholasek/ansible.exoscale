@@ -1,0 +1,8 @@
+---
+# tasks file for arillso.exoscale
+
+- name: exoscale_tags | Tag VM
+  cs_instance:
+    name: '{{ inventory_hostname }}'
+    tags: '{{ exoscale_tags }}'
+  delegate_to: 127.0.0.1
