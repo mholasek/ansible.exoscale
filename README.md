@@ -143,13 +143,14 @@ Supply a list of dicts with the following keys:
 ```
 
 The rules have the following keys available:
-| Name         | Description                         | Required |
-| ------------ | ----------------------------------- |:--------:|
-| `start_port` | the start port                      |    🟩    |
-| `end_port`   | the end port                        |    🟥    |
-| `protocol`   | the proto                           |    🟩    |
-| `type`       | the type (`tcp`/`udp`)              |    🟩    |
-| `cider`      | the range (defaults to `0.0.0.0/0`) |    🟥    |
+| Name                    | Description                         | Required |
+| -------------- | -------------------------------------- |:--------:|
+| `start_port`   | the start port                         |    🟩    |
+| `end_port`     | the end port                           |    🟥    |
+| `protocol`     | the proto                              |    🟩    |
+| `type`         | the type (`tcp`/`udp`)                 |    🟩    |
+| `cider`        | the range (defaults to `0.0.0.0/0`)    |    🟥    |
+| `usr_secgroup` | the name of the sec_group instead cidr |    🟥    |
 
 #### SSH Keys
 Define a list of public keys as follows:
